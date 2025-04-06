@@ -1,0 +1,74 @@
+.opportunity-cards {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .opportunity-card {
+    background-color: #ffe6f0;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 320px;
+    padding: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .opportunity-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border-radius: 8px;
+  }
+
+  .opportunity-info h4 {
+    margin: 0;
+    color: #a9004f;
+  }
+
+  .opportunity-info p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+  }
+
+  .opportunity-img {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto 12px;
+    display: block;
+  }
+
+  .apply-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 12px;
+    background-color: #a9004f;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+
+  .apply-button:hover {
+    background-color: #87003f;
+  }
+
+  .opportunity-info .prerequisites {
+    white-space: pre-line;
+  }
+
+  #opportunities-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }

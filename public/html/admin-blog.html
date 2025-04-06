@@ -1,0 +1,55 @@
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin Blog - PyLadies Manaus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/admin-blog.css" />
+  </head>
+  <body>
+    <main id="admin-blog">
+      <h2>Gerenciar Postagens do Blog</h2>
+
+      <form id="blog-form" enctype="multipart/form-data">
+        <input type="hidden" id="post-id" />
+
+        <div class="form-row">
+          <label for="title">Título:</label>
+          <input type="text" id="title" required />
+        </div>
+
+        <div class="form-row">
+          <label for="image">Imagem (URL):</label>
+          <input type="url" id="image" />
+        </div>
+
+        <div class="form-row">
+          <label for="upload">Upload de imagem:</label>
+          <input type="file" id="upload" accept="image/*" />
+        </div>
+
+        <div class="form-row">
+          <label for="caption">Legenda da imagem:</label>
+          <input type="text" id="caption" />
+        </div>
+
+        <div class="form-row">
+          <label for="content">Conteúdo:</label>
+          <textarea id="content" rows="6" required></textarea>
+        </div>
+
+        <div class="form-row">
+          <img id="preview" src="" style="max-width: 300px; display: none; border-radius: 6px; margin: 10px 0;" />
+        </div>
+
+        <button type="submit">Salvar</button>
+      </form>
+
+      <section id="blog-posts-list"></section>
+    </main>
+
+    <script src="../js/admin-global.js"></script>
+    <script type="module" src="../js/admin-blog.js"></script>
+  </body>
+  </html>

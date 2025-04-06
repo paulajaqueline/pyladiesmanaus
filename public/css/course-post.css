@@ -1,0 +1,158 @@
+body {
+    background-color: #fff0f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+
+  #course-details {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  #course-details h2 {
+    color: #a9004f;
+    font-size: 2rem;
+  }
+
+  #course-details img {
+    max-width: 300px;
+    border-radius: 12px;
+    margin: 12px 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #course-details p {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .video-track h3 {
+    color: #a9004f;
+    font-size: 1.3rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .video-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .video-card {
+    background-color: #ffe6f0;
+    border-radius: 12px;
+    padding: 16px;
+    width: 260px;
+    text-align: left;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+  }
+
+  .video-card:hover {
+    transform: scale(1.02);
+  }
+
+  .video-card h4 {
+    color: #a9004f;
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+
+  .video-card a {
+    text-decoration: none;
+    color: #333;
+    word-break: break-word;
+  }
+
+  .video-card a:hover {
+    color: #a9004f;
+    text-decoration: underline;
+  }
+
+  /* Seção de formulários */
+  .feedback-container {
+    margin-top: 40px;
+  }
+
+  .forms-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .forms-wrapper form {
+    background-color: #ffe6f0;
+    padding: 16px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .forms-wrapper h4 {
+    color: #a9004f;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+
+  .forms-wrapper input,
+  .forms-wrapper textarea {
+    padding: 8px;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+  .forms-wrapper button {
+    background-color: #a9004f;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  .forms-wrapper button:hover {
+    background-color: #87003f;
+  }
+
+  /* Lista de feedbacks */
+  #feedback-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+    padding: 0 12px;
+  }
+
+  #feedback-list h4 {
+    font-size: 1.2rem;
+    color: #a9004f;
+    margin-bottom: 12px;
+  }
+
+  .feedback-card {
+    background-color: #fff0f6;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+  }
+
+  .feedback-card p {
+    margin: 4px 0;
+  }

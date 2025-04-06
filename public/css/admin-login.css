@@ -1,0 +1,36 @@
+.login-container {
+    max-width: 400px;
+    margin: 5rem auto;
+    background-color: #fff0f5;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  input, button {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    background-color: #c2185b;
+    color: white;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #a3154d;
+  }
+
+  .error-msg {
+    color: red;
+    margin-top: 1rem;
+    display: none;
+  }

@@ -1,0 +1,75 @@
+#admin-volunteers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+.event-creation-card {
+  background-color: #ffe6f0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  width: 50%;
+  margin-bottom: 24px;
+}
+
+.event-creation-card form input,
+.event-creation-card form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.event-creation-card form button {
+  background-color: #a9004f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.event-creation-card form button:hover {
+  background-color: #87003f;
+}
+
+.admin-event-volunteers {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 50%;
+}
+
+.admin-events,
+.admin-volunteers {
+  width: 48%;
+}
+
+.event-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event-card-list .event-card {
+  background-color: #ffe6f0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.admin-volunteers {
+  background-color: #ffe6f0;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+#volunteer-list p {
+  font-size: 0.9rem;
+  margin: 6px 0;
+  line-height: 1.4;
+}

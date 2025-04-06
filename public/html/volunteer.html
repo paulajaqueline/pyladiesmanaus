@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Voluntariado • PyLadies Manaus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/volunteer.css">
+
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+</head>
+<body>
+  <main class="volunteer-container">
+    <section id="event-info">
+        <h2>Eventos disponíveis</h2>
+    </section>
+
+    <section id="volunteer-form-section">
+      <h2>Formulário de Voluntariado</h2>
+      <form id="volunteer-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" placeholder="(92) 91234-5678" required>
+
+        <label for="event">Evento:</label>
+        <select id="event" required>
+          <option value="">Selecione um evento</option>
+        </select>
+
+        <button type="submit">Enviar inscrição</button>
+      </form>
+    </section>
+  </main>
+
+    <script src="../js/global.js"></script>
+    <script type="module" src="../js/firebase.js"></script>
+    <script type="module" src="../js/event.js"></script>
+    <script type="module" src="../js/volunteer.js"></script>
+</body>
+</html>

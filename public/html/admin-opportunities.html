@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Oportunidades</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/admin-opportunities.css">
+</head>
+<body>
+  <div id="admin-header"></div>
+
+  <main class="admin-container">
+    <h2>Gerenciar Oportunidades</h2>
+
+    <form id="opportunity-form">
+      <input type="hidden" id="opportunity-id">
+
+      <label for="title">Título da vaga:</label>
+      <input type="text" id="title" required />
+
+      <label for="type">Tipo de oportunidade:</label>
+      <select id="type" required>
+        <option value="">Selecione</option>
+        <option value="Estágio">Estágio</option>
+        <option value="Efetiva">Vaga efetiva</option>
+        <option value="Curso">Curso</option>
+        <option value="Edital">Edital</option>
+        <option value="Afirmativa">Vaga afirmativa</option>
+      </select>
+
+      <label for="company">Empresa / Instituição:</label>
+      <input type="text" id="company" required />
+
+      <label for="workMode">Forma de trabalho:</label>
+      <select id="workMode">
+        <option value="">Selecione</option>
+        <option value="Remoto">Remoto</option>
+        <option value="Presencial">Presencial</option>
+        <option value="Híbrido">Híbrido</option>
+      </select>
+
+      <label for="location">Localidade:</label>
+      <input type="text" id="location" />
+
+      <label for="prerequisites">Pré-requisitos:</label>
+      <textarea id="prerequisites" rows="3"></textarea>
+
+      <label for="link">Link para candidatura:</label>
+      <input type="url" id="link" required />
+
+      <label for="expiration">Data de expiração:</label>
+      <input type="date" id="expiration" />
+
+      <label for="image">Imagem (URL):</label>
+      <input type="url" id="image" />
+
+      <label for="upload">Ou envie uma imagem:</label>
+      <input type="file" id="upload" accept="image/*" />
+
+      <img id="preview" style="max-width: 200px; margin-top: 10px; display: none;" />
+
+      <button type="submit">Salvar</button>
+    </form>
+
+    <section id="opportunities-list"></section>
+  </main>
+
+  <div id="admin-footer"></div>
+
+  <script src="../js/admin-global.js"></script>
+  <script type="module" src="../js/admin-opportunities.js"></script>
+</body>
+</html>

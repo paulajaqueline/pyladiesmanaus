@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff7fb;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  header, footer {
+    background-color: #ffe0eb;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #c2185b;
+    font-weight: bold;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+.event-card,
+.volunteer-card,
+.blog-card,
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover,
+.volunteer-card:hover,
+.blog-card:hover,
+.card:hover,
+.opportunity-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}

@@ -1,0 +1,62 @@
+.admin-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  form {
+    background-color: #fff0f6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+
+  form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+  }
+
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+  }
+
+  form button {
+    margin-top: 16px;
+    padding: 10px 16px;
+    background-color: #a9004f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  form button:hover {
+    background-color: #87003f;
+  }
+
+  #opportunities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .opportunity-card {
+    background-color: #f9f1f7;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  }
+
+  .opportunity-card h4 {
+    margin-top: 0;
+    color: #a9004f;
+  }

@@ -1,0 +1,37 @@
+#contact-page {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+
+  #contact-form button {
+    padding: 10px;
+    background-color: #b72883;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #response-msg {
+    margin-top: 10px;
+    font-weight: bold;
+  }

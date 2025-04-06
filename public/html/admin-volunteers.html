@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin • Voluntariado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/admin-volunteers.css">
+
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+</head>
+<body>
+  <script>
+    if (localStorage.getItem('admin_logged') !== 'true') {
+      window.location.href = '/admin/login';
+    }
+  </script>
+
+  <main id="admin-volunteers-container">
+    <h2>Gerenciamento de Voluntariado</h2>
+
+    <!-- Card de criação de evento -->
+    <div class="event-creation-card">
+      <h3>Criar novo evento</h3>
+      <form id="event-form">
+        <input type="text" id="title" placeholder="Título" required>
+        <input type="text" id="description" placeholder="Descrição" required>
+        <input type="date" id="date" required>
+        <button type="submit">Criar Evento</button>
+      </form>
+    </div>
+
+    <!-- Linha com lista de eventos e lista de voluntárias lado a lado -->
+    <div class="admin-event-volunteers">
+      <!-- Coluna da esquerda: eventos -->
+      <div class="admin-events">
+        <h3>Eventos cadastrados</h3>
+        <div id="admin-event-list" class="event-card-list"></div>
+      </div>
+
+      <!-- Coluna da direita: voluntárias -->
+      <div class="admin-volunteers">
+        <h3>Voluntárias do Evento</h3>
+        <div id="volunteer-list"></div>
+      </div>
+    </div>
+  </main>
+
+
+  <script type="module" src="../js/firebase.js"></script>
+  <script src="../js/admin-global.js"></script>
+  <script type="module" src="../js/event.js"></script>
+  <script type="module" src="../js/admin-volunteers.js"></script>
+</body>
+</html>
